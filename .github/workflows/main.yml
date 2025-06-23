@@ -1,4 +1,4 @@
-name: GCP App Engine Deploy
+name: GCP App Engine Deployement
 
 on:
   push:
