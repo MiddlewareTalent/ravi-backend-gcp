@@ -5,11 +5,11 @@ runtime_config:
   operating_system: "ubuntu22"
   runtime_version: "21"
 
-service: backend-service
+service: ravi-backend-test
 beta_settings:
-  cloud_sql_instances: ravi-backend-deployment:us-central1:ravi-mysql-instance
+  cloud_sql_instances: backend-463809:us-central1:ravi
 
 env_variables:
-  SPRING_DATASOURCE_URL: jdbc:mysql://34.10.78.81:3306/ravi_learnings_db
-  SPRING_DATASOURCE_USERNAME: Ravi
-  SPRING_DATASOURCE_PASSWORD: Ravi@123
+  SPRING_DATASOURCE_URL: jdbc:mysql://34.58.17.200:3306/test
+  SPRING_DATASOURCE_USERNAME: root
+  SPRING_DATASOURCE_PASSWORD: root
