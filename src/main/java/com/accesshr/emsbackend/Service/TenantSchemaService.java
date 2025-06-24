@@ -44,9 +44,9 @@ public class TenantSchemaService {
         // Hibernate properties for the new schema
         Map<String, Object> settings = new HashMap<>();
         settings.put("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
-        settings.put("hibernate.connection.url", "jdbc:mysql://talent-flow-server-db-server.mysql.database.azure.com:3306/" + schemaName);
-        settings.put("hibernate.connection.username", "mtl");
-        settings.put("hibernate.connection.password", "mtl@123456");
+        settings.put("hibernate.connection.url", "jdbc:mysql://34.61.15.252:3306/" + schemaName);
+        settings.put("hibernate.connection.username", "root");
+        settings.put("hibernate.connection.password", "root");
         settings.put("hibernate.hbm2ddl.auto", "create");
 
         // Build service registry

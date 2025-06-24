@@ -128,7 +128,7 @@ public class EmployeeManagerController {
             @Valid @RequestParam("firstName") String firstName,
             @RequestParam("lastName") String lastName,
             @RequestParam("email") String email,
-            @RequestParam("employeeId") String employeeId,
+//            @RequestParam("employeeId") String employeeId,
             @RequestParam("password") String password,@PathVariable String company) {
 
         EmployeeManagerDTO employeeManagerDTO = new EmployeeManagerDTO();
@@ -136,7 +136,7 @@ public class EmployeeManagerController {
         employeeManagerDTO.setLastName(lastName);
         employeeManagerDTO.setEmail(email);
         employeeManagerDTO.setCorporateEmail(email); // Set corporate email to the same email for registration
-        employeeManagerDTO.setEmployeeId(employeeId);
+//        employeeManagerDTO.setEmployeeId(employeeId);
         employeeManagerDTO.setRole("admin"); // Default role for admin
         employeeManagerDTO.setPassword(password); // Set plain text password
         try {
