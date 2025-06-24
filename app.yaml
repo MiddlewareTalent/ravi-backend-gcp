@@ -22,4 +22,3 @@ env_variables:
   SPRING_DATASOURCE_USERNAME: root
   SPRING_DATASOURCE_PASSWORD: root
 
-entrypoint: java -jar target/ems-backend-0.0.1-SNAPSHOT.jar
