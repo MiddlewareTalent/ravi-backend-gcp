@@ -3,7 +3,7 @@ name: Deploy to GCP App Engine
 on:
   push:
     branches:
-      - mainn  # or your deploy branch
+      - main  # or your deploy branch
 
 jobs:
   deploy:

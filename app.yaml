@@ -1,3 +1,4 @@
+service: ravi-automation
 runtime: java
 env: flex
 
@@ -17,5 +18,5 @@ resources:
 
 env_variables:
   SPRING_PROFILES_ACTIVE: gae
-  SPRING_DATASOURCE_USERNAME: ravi
-  SPRING_DATASOURCE_PASSWORD: ravi
+  SPRING_DATASOURCE_USERNAME: root
+  SPRING_DATASOURCE_PASSWORD: root
