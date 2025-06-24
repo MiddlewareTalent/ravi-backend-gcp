@@ -22,7 +22,7 @@ jobs:
     - name: Set up Google Cloud SDK
       uses: google-github-actions/setup-gcloud@v2
       with:
-        project_id: ravi-backend
+        project_id: my-backend-project-463909
         service_account_key: ${{ secrets.GCP_SA_KEY }}
         export_default_credentials: true
 
