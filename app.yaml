@@ -2,14 +2,20 @@ runtime: java
 env: flex
 
 runtime_config:
+  runtime_version: 17
   operating_system: "ubuntu22"
-  runtime_version: "21"
 
-service: ravi-backend-test
-beta_settings:
-  cloud_sql_instances: backend-463809:us-central1:ravi
+instance_class: F2
+
+manual_scaling:
+  instances: 1
+
+resources:
+  cpu: 1
+  memory_gb: 1
+  disk_size_gb: 10
 
 env_variables:
-  SPRING_DATASOURCE_URL: jdbc:mysql://34.58.17.200:3306/test
-  SPRING_DATASOURCE_USERNAME: root
-  SPRING_DATASOURCE_PASSWORD: root
+  SPRING_PROFILES_ACTIVE: gae
+  SPRING_DATASOURCE_USERNAME: ravi
+  SPRING_DATASOURCE_PASSWORD: ravi
