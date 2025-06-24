@@ -34,4 +34,4 @@ jobs:
         run: mvn clean install -DskipTests
 
       - name: Deploy to App Engine
-        run: gcloud app deploy target/ems-backend-0.0.1-SNAPSHOT.jar --quiet
+        run: gcloud app deploy app.yaml target/ems-backend-0.0.1-SNAPSHOT.jar --quiet
